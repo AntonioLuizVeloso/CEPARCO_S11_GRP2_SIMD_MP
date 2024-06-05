@@ -6,7 +6,7 @@
 extern int ymmasm(int ARRAY_SIZE, float* x, float* y);
 
 int main() {
-    const size_t ARRAY_SIZE = 1 << 20;
+    const size_t ARRAY_SIZE = (1 << 20) + 69;
     const size_t ARRAY_BYTES = ARRAY_SIZE * sizeof(float);
     int i;
     printf("Number of Elements = %zd\n", ARRAY_SIZE);
@@ -21,17 +21,13 @@ int main() {
         x[i] = (float)rand();
     }
 
-    for (i = 0; i < ARRAY_SIZE; i++) {
-        printf("%f\n", x[i]);
-    }
-
     //NON-SIMD ASM
     ymmasm(ARRAY_SIZE, x, y);
-    for (i = 0; i < 20; i++) {
+    for (i = 0; i < 10; i++) {
         printf("%f \t\t %f\n", x[i], y[i]);
     }
     printf(".\n.\n.\n.");
-    for (i = 20; i > 0; i--)
+    for (i = 10; i > 0; i--)
     {
         printf("%f \t\t %f\n", x[ARRAY_SIZE - i], y[ARRAY_SIZE - i - 6]);
     }
