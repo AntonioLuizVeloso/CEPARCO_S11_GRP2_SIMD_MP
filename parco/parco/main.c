@@ -108,7 +108,7 @@ int main() {
     printf("YMM-SIMD Implementation of 1-D Stencil: \n");
     for (i = 0; i < 1; i++) {
         QueryPerformanceCounter(&start);
-        ymmasm(ARRAY_SIZE, y, x);
+        ymmasm(ARRAY_SIZE, x, y);
         QueryPerformanceCounter(&end);
         time_taken = ((double)(end.QuadPart - start.QuadPart) * 1e3) / freq.QuadPart;
         sum += time_taken;
