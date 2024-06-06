@@ -1,0 +1,2 @@
+^C:\USERS\CHRISTIAN\SOURCE\REPOS\PARCO\PARCO\ASMFUNC.ASM
+"C:\Program Files (x86)\SASM\NASM\nasm" -f win64 asmfunc.asm
