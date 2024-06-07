@@ -17,10 +17,14 @@ static void compressY(long long int n, float* y, float* x) {
 static void forPrinting(long long int ARRAY_SIZE, float* x, float* y, double ave, char* implem)
 {
     int i = 0;
+    printf("First Ten\n");
+    printf("X \t\t\t Y\n");
     for (i = 0; i < 10; i++) {
         printf("%f \t\t %f\n", x[i], y[i]);
     }
     printf(".\n.\n.\n");
+    printf("Last Ten\n");
+    printf("X \t\t\t Y\n");
     for (i = 10;i > 0; i--)
     {
         printf("%f \t\t %f\n", x[ARRAY_SIZE - i], y[ARRAY_SIZE - i - 6]);
@@ -44,7 +48,7 @@ static void forErrors(long long int ARRAY_SIZE, float* y, float* z)
 }
 
 int main() {
-    const long long int ARRAY_SIZE = 1 << 25;
+    const long long int ARRAY_SIZE = 1 << 20;
     const size_t ARRAY_BYTES = ARRAY_SIZE * sizeof(float);
     int i;
     printf("Number of Elements = %zd\n", ARRAY_SIZE);
