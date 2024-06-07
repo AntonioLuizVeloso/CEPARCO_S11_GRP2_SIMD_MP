@@ -83,9 +83,20 @@ ii.) Comparative Table of Execution Time + Analysis of the Performance of Differ
 <h3> vii.) Discussion of Problems Encountered and Solutions Implemented </h3>
 
 <h5>
-  Brute force method for both SIMD AHA
+  The first interesting observation the group had was that in a stencil, the first Y value comes when **i=3**, allowing the formula to not result in an error, however since the Y vector supposedly should not be carrying empty values or zeros, this means that the stencil can be *shifted*. Instead of using Y[i] = X[i-3] + ... + X[i+3], the group used Y[i] = X[i] + X[i+1] +...+ X[i+6] instead.
+
+  
+  This idea was implemented in the assembly functions and not on the C function, for the sake of preserving the real formula. For NON-SIMD, the only real problem the group faced was incorrect addition of values, which was fixed by making sure the pointer of the vector after reaching **i+6** is subtracted back to **i+1** for the next Y vector value.
+
+  
+  For XMM and YMM SIMD, an interesting solution the group came up with was to make use of 2 registers, pack them with values, add those values to another output register, and reuse the first register by packing it with new values but shifted by 4 bytes. After 7 repeats of this simple process, there are now 4(for xmm, 8 for ymm) values that can be pushed onto the Y vector at the **price of one**.
 </h5>
 
 <h5>
-  Boundary handling for SIMD XMM and SIMD YMM was done by... this was tested by... add screenshots as proof???
+  Because of the aforementioned solution to XMM and YMM SIMD, the boundary is handled fine and no errors occur when array size is ** (2^20)+3,(2^20)+5,(2^20)+6,(2^20)+9 **. Screenshots below are added for case (2^20)+9 run in Debug Configuration:
 </h5>
+
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/79b88dc2-f8f5-4d2c-b91d-c24c5e2bdf84" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/a745465c-4386-4062-8c09-817777e86c21" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/f0e3d5d4-9595-4e22-955a-1ad4717346e4" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/d66d720a-2bfb-4eb1-a0b8-34154127edd7" height = "500" width = "400">
