@@ -10,9 +10,9 @@
 
 <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/fc34a33d-35c7-4a56-b33f-7df38ae054e7" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/35fc7e25-928b-49a0-9d6e-e38c89bc37fc" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/4e5f3602-b584-4b17-99ea-cef17e097cda" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/1350ae30-1bb6-4240-aa8c-38bc9b752ae3" height = "500" width = "400">
 
-<h4> DEBUG, Vector size n = 2^30 </h4>
+<h4> DEBUG, Vector size n = 2^27 </h4>
 
-<img src = "" height = "500" width = "400"> <img src = "" height = "500" width = "400"> <img src = "" height = "500" width = "400"> <img src = "" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/e373ad69-cd3f-4538-ac2a-99360d249893" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/656b5909-db14-4855-86b3-68fe32697b94" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/94b54daa-527d-4da8-8577-5efdc41596d9" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/baffba25-115e-4587-b4d7-9c3769b70de0" height = "500" width = "400">
 
 <h4> RELEASE, Vector size n = 2^20 </h4>
 
@@ -25,27 +25,27 @@
 <h4> RELEASE, Vector size n = 2^30 </h4>
 
 <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/1595ee7b-9035-488c-b52f-cb60ffb25d4a" height = "500" width ="400"> 
-<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/d5748b38-65ca-4e7b-8de6-39f0ceb324ff" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/86b5fdeb-3fd6-4a99-9c00-16e6a2fcc902" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/465e8bf2-258d-4b27-948e-bd0b33239fca" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/d5748b38-65ca-4e7b-8de6-39f0ceb324ff" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/86b5fdeb-3fd6-4a99-9c00-16e6a2fcc902" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/802aa377-3a56-424e-9fa3-0913529dac9f" height = "500" width = "400">
 
 ii.) Comparative Table of Execution Time + Analysis of the Performance of Different Kernels
 
 | Version | Kernel | Execution Time for n = 2<sup>20</sup> | Execution Time for n = 2<sup>26</sup> | Execution Time for n = 2<sup>30</sup> |
 | --- | --- | --- | --- | --- |
-| Debug | C | 4.352280 ms | 165.044217 ms | |
-| Release | C | 0.514263 ms | 38.037137 ms | |
-| Debug | NON-SIMD | 7.154423 ms | 243.168383 ms | |
-| Release | NON-SIMD | 4.653573 ms | 239.715557 ms | |
-| Debug | SIMD w/ XMM | 1.195450 ms | 44.066440 ms | |
-| Release | SIMD w/ XMM | 0.880623 ms | 39.116787 ms | |
-| Debug | SIMD w/ YMM | 0.023947 ms | 1.266637 ms | |
-| Release | SIMD w/ YMM | 0.017117 ms | 1.130136 ms | |
+| Debug | C | 4.352280 ms | 165.044217 ms | n/a |
+| Release | C | 0.514263 ms | 38.037137 ms | 2.346349 s |
+| Debug | NON-SIMD | 7.154423 ms | 243.168383 ms | n/a |
+| Release | NON-SIMD | 4.653573 ms | 239.715557 ms | 5.946140 s|
+| Debug | SIMD w/ XMM | 1.195450 ms | 44.066440 ms | n/a |
+| Release | SIMD w/ XMM | 0.880623 ms | 39.116787 ms | 1.970389 s|
+| Debug | SIMD w/ YMM | 0.023947 ms | 1.266637 ms | n/a |
+| Release | SIMD w/ YMM | 0.017117 ms | 1.130136 ms | 1.337666 s|
 
 <h5 align = "justify">
-  As shown in the table above, for the Debug Version, it can be observed that YMM is faster than XMM, which is faster than C, which is faster than Non-SIMD. This stays mostly the same for the Release version, except that C becomes slightly faster than the XMM implementation. Further, the Release Version is much faster than the Debug version because the Release Version of Visual Studio tries to generally optimize performance. 
+  As shown in the table above, for the Debug Version, it can be observed that YMM is faster than XMM, which is faster than C, which is faster than Non-SIMD. This stays mostly the same for the Release version, except that C becomes slightly faster than the XMM implementation. Further, the Release Version is much faster than the Debug version because the Release Version of Visual Studio tries to generally optimize performance. An interesting and somewhat unfortunate observation is that for size 2^30, Debug configuration results in an error caused by a null pointer determined to have been caused by a failed malloc() instruction, and upon further research the group tried to increase the virtual memory of the system but it unfortunately did not work, and yet on Release configuration the code works as intended. For Debug version, the maximum array size that does not cause an error is for size 2^27.
 </h5>
 
 <h5 align = "justify">
-  YMM is the fastest because... XMM is the second fastest because... XMM becomes the third fastest in the Release version because... C is the third fastest because... Non-SIMD is the slowest because...
+  YMM is the fastest simply because it can handle more data than all the other methods. XMM is the second fastest because while it is a large register type, it only has half the size of YMM, but it has an advantage in its packed characteristic over NON-SIMD. XMM becomes the third fastest in the Release version likely because of unoptimized code. C is the third fastest in general likely because while it is a high-level language that is probably already optimized, the instructions of the language itself cause some delay when compared to baseline assembly instructions. Non-SIMD is the slowest likely because of unoptimized code, but also because it is restricted to only handling single values only which accumulates in delay as the size gets larger.
 </h5>
 
 <h3> iii.) Screenshot of the Program Output w/ Correctness Check (C) </h3>
