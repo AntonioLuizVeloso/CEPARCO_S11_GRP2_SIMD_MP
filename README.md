@@ -39,8 +39,12 @@ ii.) Comparative Table of Execution Time + Analysis of the Performance of Differ
 | Debug | SIMD w/ YMM | 0.023947 ms | 1.266637 ms | |
 | Release | SIMD w/ YMM | 0.017117 ms | 1.130136 ms | |
 
-<h5>
-  As shown in the table above, 
+<h5 align = "justify">
+  As shown in the table above, for the Debug Version, it can be observed that YMM is faster than XMM, which is faster than C, which is faster than Non-SIMD. This stays mostly the same for the Release version, except that C becomes slightly faster than the XMM implementation. Further, the Release Version is much faster than the Debug version because the Release Version of Visual Studio tries to generally optimize performance. 
+</h5>
+
+<h5 align = "justify">
+  YMM is the fastest because... XMM is the second fastest because... XMM becomes the third fastest in the Release version because... C is the third fastest because... Non-SIMD is the slowest because...
 </h5>
 
 <h3> iii.) Screenshot of the Program Output w/ Correctness Check (C) </h3>
