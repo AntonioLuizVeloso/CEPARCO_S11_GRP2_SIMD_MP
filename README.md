@@ -29,15 +29,15 @@
 
 ii.) Comparative Table of Execution Time + Analysis of the Performance of Different Kernels
 
-| Version | Kernel | Execution Time for n = 2<sup>20</sup> | Execution Time for n = 2<sup>26</sup> | Execution Time for n = 2<sup>30</sup> |
+| Version | Kernel | Execution Time for n = 2<sup>20</sup> | Execution Time for n = 2<sup>26</sup> | Execution Time for n = 2<sup>30</sup> (*)=Max Debug Size 2<sup>27</sup>|
 | --- | --- | --- | --- | --- |
-| Debug | C | 4.352280 ms | 165.044217 ms | n/a |
+| Debug | C | 4.352280 ms | 165.044217 ms | 0.292189 s (*) |
 | Release | C | 0.514263 ms | 38.037137 ms | 2.346349 s |
-| Debug | NON-SIMD | 7.154423 ms | 243.168383 ms | n/a |
+| Debug | NON-SIMD | 7.154423 ms | 243.168383 ms | 0.517901 s (*) |
 | Release | NON-SIMD | 4.653573 ms | 239.715557 ms | 5.946140 s|
-| Debug | SIMD w/ XMM | 1.195450 ms | 44.066440 ms | n/a |
+| Debug | SIMD w/ XMM | 1.195450 ms | 44.066440 ms | 0.103719 s (*) |
 | Release | SIMD w/ XMM | 0.880623 ms | 39.116787 ms | 1.970389 s|
-| Debug | SIMD w/ YMM | 0.023947 ms | 1.266637 ms | n/a |
+| Debug | SIMD w/ YMM | 0.023947 ms | 1.266637 ms | 0.002491 s (*) |
 | Release | SIMD w/ YMM | 0.017117 ms | 1.130136 ms | 1.337666 s|
 
 <h5 align = "justify">
@@ -93,7 +93,7 @@ ii.) Comparative Table of Execution Time + Analysis of the Performance of Differ
 </h5>
 
 <h5>
-  Because of the aforementioned solution to XMM and YMM SIMD, the boundary is handled fine and no errors occur when array size is ** (2^20)+3,(2^20)+5,(2^20)+6,(2^20)+9 **. Screenshots below are added for case (2^20)+9 run in Debug Configuration:
+  Because of the aforementioned solution to XMM and YMM SIMD, the boundary is handled fine and no errors occur when array size is ** (2<sup>20</sup>)+3,(2<sup>20</sup>)+5,(2<sup>20</sup>)+6,(2<sup>20</sup>)+9 **. Screenshots below are added for case (2^20)+9 run in Debug Configuration:
 </h5>
 
 <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/79b88dc2-f8f5-4d2c-b91d-c24c5e2bdf84" height = "500" width = "400">
