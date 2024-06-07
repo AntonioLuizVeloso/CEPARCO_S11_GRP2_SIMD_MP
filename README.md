@@ -84,3 +84,7 @@ ii.) Comparative Table of Execution Time + Analysis of the Performance of Differ
 <h5>
   Brute force method for both SIMD AHA
 </h5>
+
+<h5>
+  Boundary handling for SIMD XMM and SIMD YMM was done by... this was tested by... add screenshots as proof???
+</h5>
