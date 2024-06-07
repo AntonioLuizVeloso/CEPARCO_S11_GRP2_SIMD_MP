@@ -23,10 +23,9 @@
 <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/95e4e295-d446-4530-8046-bfa4f764cff0" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/b0bbddc5-c525-454e-be29-0ee6de4a67e3" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/f50dd44a-03e5-43a2-9d5d-88488c41eb80" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/f8205ac5-a37e-4754-9616-9ced4aa9610a" height = "500" width = "400">
 
 <h4> RELEASE, Vector size n = 2^30 </h4>
-![Screenshot 2024-06-07 174956](https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/1595ee7b-9035-488c-b52f-cb60ffb25d4a)
 
 <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/1595ee7b-9035-488c-b52f-cb60ffb25d4a" height = "500" width ="400"> 
-<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/24cc003d-6474-4c4f-a115-dffdf126bd1f" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/a9135bfb-2562-4779-941c-5045fdb50fb2" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/ab67ed87-2721-4382-95f2-9b39328cab6d" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/d5748b38-65ca-4e7b-8de6-39f0ceb324ff" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/86b5fdeb-3fd6-4a99-9c00-16e6a2fcc902" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/465e8bf2-258d-4b27-948e-bd0b33239fca" height = "500" width = "400">
 
 ii.) Comparative Table of Execution Time + Analysis of the Performance of Different Kernels
 
