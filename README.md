@@ -24,7 +24,8 @@
 
 <h4> RELEASE, Vector size n = 2^30 </h4>
 
-<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/196afb56-c524-48d8-9ab8-5fd2b5affc7d" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/24cc003d-6474-4c4f-a115-dffdf126bd1f" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/a9135bfb-2562-4779-941c-5045fdb50fb2" height = "500" width = "400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/ab67ed87-2721-4382-95f2-9b39328cab6d" height = "500" width = "400">
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/196afb56-c524-48d8-9ab8-5fd2b5affc7d" height = "500" width ="400"> 
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/24cc003d-6474-4c4f-a115-dffdf126bd1f" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/a9135bfb-2562-4779-941c-5045fdb50fb2" height = "500" width ="400"> <img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/119172963/ab67ed87-2721-4382-95f2-9b39328cab6d" height = "500" width = "400">
 
 ii.) Comparative Table of Execution Time + Analysis of the Performance of Different Kernels
 
