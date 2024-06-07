@@ -45,12 +45,35 @@ ii.) Comparative Table of Execution Time + Analysis of the Performance of Differ
 
 <h3> iii.) Screenshot of the Program Output w/ Correctness Check (C) </h3>
 
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/06d5b3a4-f25d-4e75-a30f-62d862267559" width = "400">
+
+<h5>
+  This output will be compared to the outputs of other implementations to determine their correctness.
+</h5>
 
 <h3> iv.) Screenshot of the Program Output including Correctness Check (x86-64) </h3>
 
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/ea2cdc56-d3ff-484a-9552-30678ace2f32" width = "400">
+
+<h5>
+  This output is the same as the C output, so it is correct.
+</h5>
+
 <h3> v.) Screenshot of the Program Output including Correctness Check (SIMD XMM Register) </h3>
 
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/abaadf61-3ea3-46cf-ae43-f92a5623f181" width = "400">
+
+<h5>
+  This output is the same as the C output, so it is correct.
+</h5>
+
 <h3> vi.) Screenshot of the Program Output including Correctness Check (SIMD YMM Register) </h3>
+
+<img src = "https://github.com/AntonioLuizVeloso/CEPARCO_S11_GRP2_SIMD_MP/assets/92433849/93bf8585-ca69-4fbd-b28b-6726c7f32204" width = "400">
+
+<h5>
+  This output is the same as the C output, so it is correct.
+</h5>
 
 <h3> vii.) Discussion of Problems Encountered and Solutions Implemented </h3>
 
